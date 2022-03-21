@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}
+Saved!
+{% endblock %}
+{% block content %}
+
+{% if warning %}
+    <h1 class="heading">Data already exists!! ☹</h1>
+    <a class="btn btn-dark" id="x" href='{{ url_for("submitMistakes", subject=subject) }}'>Try Again</a>
+
+{% elif success %}
+<h1 class="heading">Successfully saved your information😊</h1>
+<a class="btn btn-dark" id="y" href="/">Go Back</a>
+
+    
+{% endif %}
+{% endblock %}
