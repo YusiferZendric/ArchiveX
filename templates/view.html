@@ -8,7 +8,7 @@ Views
 {% for i in range(len(data[subject]['level'])) %}
 {% if data[subject]['level'][i] == level %}
 <div class="container">
-  <h1 class="centered">Weakness {{i}}</h1>
+  <h1 class="centered">Weakness</h1>
   <h1>{{data[subject]['weakness'][i]}}</h1>
 </div>
 {% endif %}
@@ -16,7 +16,8 @@ Views
 {% endfor %}
   
 {% else %}
-  
+<h1 class="mainreq">Select the subject and level you want to view!</h1>
+  <div class="boxes">
 <div class="dropdown">
   <a class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     English
@@ -27,6 +28,76 @@ Views
     <a class="dropdown-item" href="/english/view/Level 3 🤨">Level 3 🤨</a>
     <a class="dropdown-item" href="/english/view/Level 4 😕">Level 4 😕</a>
     <a class="dropdown-item" href="/english/view/Level 5 😑">Level 5 😑</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="#">Everything 🔥</a>
+  </div>
+  </div>
+<div class="dropdown">
+  <a class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Hindi
+  </a>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="/hindi/view/Level 1 🤓">Level 1 🤓</a>
+    <a class="dropdown-item" href="/hindi/view/Level 2 🧐">Level 2 🧐</a>
+    <a class="dropdown-item" href="/hindi/view/Level 3 🤨">Level 3 🤨</a>
+    <a class="dropdown-item" href="/hindi/view/Level 4 😕">Level 4 😕</a>
+    <a class="dropdown-item" href="/hindi/view/Level 5 😑">Level 5 😑</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="#">Everything 🔥</a>
+  </div>
+  </div>
+<div class="dropdown">
+  <a class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Maths
+  </a>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="/english/view/Level 1 🤓">Level 1 🤓</a>
+    <a class="dropdown-item" href="/english/view/Level 2 🧐">Level 2 🧐</a>
+    <a class="dropdown-item" href="/english/view/Level 3 🤨">Level 3 🤨</a>
+    <a class="dropdown-item" href="/english/view/Level 4 😕">Level 4 😕</a>
+    <a class="dropdown-item" href="/english/view/Level 5 😑">Level 5 😑</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="#">Everything 🔥</a>
+  </div>
+  </div>
+<div class="dropdown">
+  <a class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Science
+  </a>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="/science/view/Level 1 🤓">Level 1 🤓</a>
+    <a class="dropdown-item" href="/science/view/Level 2 🧐">Level 2 🧐</a>
+    <a class="dropdown-item" href="/science/view/Level 3 🤨">Level 3 🤨</a>
+    <a class="dropdown-item" href="/science/view/Level 4 😕">Level 4 😕</a>
+    <a class="dropdown-item" href="/science/view/Level 5 😑">Level 5 😑</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="#">Everything 🔥</a>
+  </div>
+  </div>
+<div class="dropdown">
+  <a class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    SST
+  </a>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="/sst/view/Level 1 🤓">Level 1 🤓</a>
+    <a class="dropdown-item" href="/sst/view/Level 2 🧐">Level 2 🧐</a>
+    <a class="dropdown-item" href="/sst/view/Level 3 🤨">Level 3 🤨</a>
+    <a class="dropdown-item" href="/sst/view/Level 4 😕">Level 4 😕</a>
+    <a class="dropdown-item" href="/sst/view/Level 5 😑">Level 5 😑</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="#">Everything 🔥</a>
+  </div>
+  </div>
+<div class="dropdown">
+  <a class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    IT
+  </a>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="/it/view/Level 1 🤓">Level 1 🤓</a>
+    <a class="dropdown-item" href="/it/view/Level 2 🧐">Level 2 🧐</a>
+    <a class="dropdown-item" href="/it/view/Level 3 🤨">Level 3 🤨</a>
+    <a class="dropdown-item" href="/it/view/Level 4 😕">Level 4 😕</a>
+    <a class="dropdown-item" href="/it/view/Level 5 😑">Level 5 😑</a>
     <div class="dropdown-divider"></div>
     <a class="dropdown-item" href="#">Everything 🔥</a>
   </div>

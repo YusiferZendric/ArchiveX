@@ -7,11 +7,14 @@ Saved!
 {% if warning %}
     <h1 class="heading">Data already exists!! ☹</h1>
     <a class="btn btn-dark" id="x" href='{{ url_for("submitMistakes", subject=subject) }}'>Try Again</a>
-
+{% elif create_account %}
+<h1 class="heading">You have to first Create/Login to see or save your data!</h1>
+<a class="btn btn-dark" id="x" href='{{ url_for("login") }}'>Login/Register</a>
 {% elif success %}
 <h1 class="heading">Successfully saved your information😊</h1>
-<a class="btn btn-dark" id="y" href="/">Go Back</a>
-
-    
+<a class="btn btn-dark" id="y" href="/intro">Go Back</a>
+{% elif nothing %}
+<h1 class="heading">No Data found in this! Go back and try another</h1>
+<a class="btn btn-dark" id="x" href='{{ url_for("view") }}'>Go back</a>
 {% endif %}
 {% endblock %}

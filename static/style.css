@@ -1,4 +1,4 @@
-.readme{
+.readme {
     font-size: 2em;
     font-weight: bold;
     border: 0.5rem solid black;
@@ -10,14 +10,16 @@
     width: fit-content;
     margin-bottom: 2rem;
 }
-a[class="btn btn-dark"]{
+
+a[class="btn btn-dark"] {
     display: grid;
     margin: auto;
     font-size: 2em;
     width: 70%;
     margin-bottom: 1rem;
 }
-h1{
+
+h1 {
     text-align: center;
     border: 5px solid black;
     width: fit-content;
@@ -25,32 +27,35 @@ h1{
     margin: auto;
     margin-top: 4rem;
 }
-.buttons{
+
+.buttons {
     display: grid;
     margin: 2rem;
     margin-top: 5em;
-    
 }
-a[class="btn btn-dark"]{
+
+a[class="btn btn-dark"] {
     margin-bottom: 1rem;
     font-size: 3em;
 }
-h1{
+
+h1 {
     font-size: 5em;
 }
-label{
+
+label {
     font-size: 1.5em;
     margin-left: 1rem;
-
 }
 
-h1[class='main']{
+h1[class='main'] {
     margin-top: 2em;
     text-align: center;
     border: 0.2em solid black;
     padding: 0.5em;
 }
-.form{
+
+.form {
     text-align: center;
     border: 0.3em solid black;
     border-radius: 10px;
@@ -58,29 +63,73 @@ h1[class='main']{
     margin-right: 1rem;
     margin-top: 2em;
 }
-input[class="btn btn-dark"]{
+
+input[class="btn btn-dark"] {
     font-size: 1.5rem;
     margin-top: 1em;
-
 }
-.heading{
+
+.heading {
     margin-top: 2em;
     border: 10px solid black;
     font-size: 3em;
     text-align: center;
 }
-a[id="x"]{
+
+a[id="x"] {
     font-size: 2em;
     width: 70%;
     margin-top: 4em;
     margin-left: 15%;
 }
-a[id="y"]{
+
+a[id="y"] {
     font-size: 2em;
     width: 70%;
     margin-top: 4em;
     margin-left: 15%;
 }
- .container{
-        border: 1rem solid black;
-    }
+
+div[class="container"] {
+    border: 1rem solid black;
+}
+
+.mb-4 {
+    color: black
+}
+
+p[class="small mb-0"] {
+    color: rgb(68, 67, 67);
+}
+
+.error{
+    color: red;
+}
+.temp{
+    visibility: hidden;
+}
+button[class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3"]{
+    width: fit-content;
+    height: fit-content;
+}
+.boxes{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    margin-right: 4em;
+    
+}
+.boxes a[class='btn btn-secondary dropdown-toggle']{
+    width: 200%;
+    margin-bottom: 1em;
+}
+
+.mainreq{
+    margin: auto;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+    padding: 1em;
+    border-radius: 10px;
+    width: 80%;
+}
